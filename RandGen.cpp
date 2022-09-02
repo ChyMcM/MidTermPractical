@@ -141,6 +141,7 @@ void RandGen::OnAnswerClick(wxCommandEvent& evt)
         yes = new wxButton(this, 10000, "Yes!", wxPoint(50, 50), wxSize(400, 50));
         no = new wxButton(this, 10001, "No", wxPoint(50, 100), wxSize(400, 50));
         this->Refresh();
+        yesorno = false;
         yes->Bind(wxEVT_COMMAND_BUTTON_CLICKED, &RandGen::OnButtonClick, this);
         no->Bind(wxEVT_COMMAND_BUTTON_CLICKED, &RandGen::OnButtonClick, this);
     }
